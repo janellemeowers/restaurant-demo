@@ -7,6 +7,7 @@ Features:
 - Menu styling (active button styling) (To do: add btn interactions)
 - Display Flex styling
 - Mobile responsive
+- Built with Vite
 
 <a href='https://restaurant-demo-jmyers.netlify.app/'>Live Site </a>
 
