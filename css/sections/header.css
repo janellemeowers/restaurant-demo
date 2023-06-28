@@ -1,0 +1,78 @@
+.header__nav {
+  /* //in order to use flex model */
+  display: flex;
+  overflow: hidden;
+}
+
+.header__logo {
+  /* //get remaining space */
+  flex: 1;
+  display: flex;
+
+  /* //so this is parent of overlay */
+  position: relative;
+  padding: 20px;
+}
+
+.header__logo-overlay {
+  position: absolute;
+  /* means margin 0,0,0,0 */
+  inset: 0;
+  width: 100%;
+
+  /* saved variable in main css file */
+  background-color: var(--primary-color);
+  /* /go behind */
+  z-index: -1;
+}
+
+.header__logo h4 {
+  padding-left: 30px;
+
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: var(--playfair-display);
+  color: #fff;
+  opacity: 0.9;
+}
+
+/*when mobile is unhidden it will then display these*/
+.header__menu,
+.header__menu-mobile {
+  padding: 20px;
+  flex: 1.236;
+  display: flex;
+  /* center verticle*/
+  align-items: center;
+  justify-content: flex-end;
+  gap: 64px;
+
+  /*remove bullets*/
+  list-style: none;
+}
+
+.header__menu li {
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--secondary-color);
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+/* search img */
+.header__menu li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* //hide hamburger icon */
+.header__menu-mobile {
+  display: none;
+  gap: 20px;
+
+  position: relative;
+}
